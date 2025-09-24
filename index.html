@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa mãe</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Placa Mãe</h1>
+    </header>
+    <br><br>
+    <main>
+        <h3>O que é?</h3>
+        <br>
+        <div class="card">
+            <p>
+                A placa-mãe é uma parte bastante importante do computador. 
+                Mas o que é uma placa-mãe de fato? É uma peça central responsável por conectar e interligar todos os componentes. 
+                A placa une todas as partes do sistema numa só rede de fios, porque dispõe de caminhos que permitem a troca de informação entre processadores, memórias, placas e etc.
+            </p>
+        </div>
+        <br><br>
+        <h3>Para que serve?</h3>
+        <br>
+        <div class="card">
+            <p>
+                A motherboard garante que todos os componentes de hardware funcionem de forma coordenada para o bom funcionamento do PC. 
+                Além disso, a placa-mãe também é responsável por conectar periféricos como mouses, teclados e fones de ouvido, por exemplo.
+            </p>
+        </div>
+        <br><br>
+        <div class="comofunciona">
+            <h3>Como funciona?</h3>
+            <br>
+            <p>
+                A placa mãe funciona como um centro de controle. 
+                Ela distribui a energia elétrica para todos os componentes e permite que as informações circulem entre eles. 
+                Aqui está o básico de como ela faz isso:
+            </p>
+        </div>
+        <div class="ordem">
+            <div class="cards">
+                <p>O processador (CPU) é a "cabeça" do computador, e a placa mãe o conecta com os outros componentes.</p>
+            </div>
+            <div class="cards">
+                <p>A placa mãe tem slots onde você pode colocar a memória RAM, que é usada para armazenar dados temporariamente enquanto o computador está ligado.</p>
+            </div>
+            <div class="cards">
+                <p>Ela também tem slots para placas de vídeo, que ajudam a processar imagens e vídeos.</p>
+            </div>
+            <div class="cards">
+                <p>Além disso, a placa mãe tem conexões para dispositivos de armazenamento como HDs e SSDs, onde os dados são guardados permanentemente.</p>
+            </div>
+            <div class="cards">
+                <p>Ela também possui portas USB, entradas de áudio e conexões de rede para conectar periféricos e acessar a internet.</p>
+            </div>
+            <div class="cards">
+            <p>Ela envia sinais para a memória RAM, para que o processador consiga acessar os dados e informações rapidamente.</p>
+            </div>
+            <div class="cards">
+                <p>A placa mãe também permite que dispositivos como HD/SSD, placas de vídeo, placas de som e outros se conectem e se comuniquem com o computador.</p>
+            </div>
+       </div>
+        <br><br>
+        <h3>O que faz uma placa-mãe ser melhor do que a outra?</h3>
+        <br>
+        <div class="card">
+            <p>
+                Embora muita gente pense no processador e memória como decisão de compra e esqueça da placa-mãe, vale ressaltar que ela desempenha um papel decisivo na vocação de um sistema. 
+                Um computador mais simples, claro, pode abrir mão de algumas tecnologias para conter custos e caber melhor no estilo de vida do usuário. 
+                Já o oposto é obrigatório em um PC voltado para um sujeito mais exigente.
+                Quando você investiga as qualidades de um chipset e, portanto, de uma placa, vai precisar dominar alguns termos e tecnologias. 
+                Conhecendo o chipset da placa você sabe qual é o soquete, suporte a que tipo de memórias, quantas portas USB a placa oferece e etc.
+            </p>
+        </div>
+            <br><br>
+            <div class="comofunciona">
+                <h3>Modelos:</h3>
+                <br>
+                <p>Existem diferentes modelos de placa mãe, dependendo de como ela é feita e de qual tipo de computador ela serve. Alguns fatores que variam entre os modelos:</p>
+            </div>
+        <div class="ordem">
+            <div class="cards">
+                <p>Tamanho: Placas mãe podem ser ATX (grandes) ou Micro-ATX e Mini-ITX (menores).</p>
+            </div>
+            <div class="cards">
+                <p>Soquete: Diferentes placas mãe têm soquetes diferentes para encaixar o processador (CPU).</p>
+            </div>
+            <div class="cards">
+                <p>Chipset: O chipset define a compatibilidade da placa mãe com certos tipos de processadores e outras tecnologias.</p>
+            </div>
+            <div class="cards">
+                <p>Suporte a Memória: Algumas placas mãe suportam mais memória RAM ou tipos mais rápidos de RAM.</p>
+            </div>
+            <div class="cards">
+                <p>Conectividade: Algumas placas mãe têm mais portas USB, entradas de áudio, Wi-Fi integrado, etc.</p>
+            </div>
+            <div class="cards">
+                <p>Expansão: Placas mãe com mais slots PCIe permitem adicionar mais placas de vídeo ou outros componentes.</p>
+            </div>
+            <div class="cards">
+                <p>Número de Slots: Algumas permitem mais placas de vídeo ou RAM do que outras.</p>
+            </div>
+         </div>
+        <br><br>
+        <model-viewer src="motherboard__components.glb" 
+        auto-rotate 
+        camera-controls 
+        style="width: 1200px; height: 800px;">
+        </model-viewer>
+        <br><br>
+        <div class="quiz">
+            <h3>Quiz</h3>
+            <br>
+            <p>Teste seus conhecimentos sobre placa mãe!</p>
+            <br>
+            <p id="pergunta"></p>
+            <br>
+            <p id="a"></p>
+            <br>
+            <p id="b"></p>
+            <br>
+            <p id="c"></p>
+            <br>
+            <input type="text" id="caixa" placeholder="Coloque sua resposta aqui">
+            <button onclick="send()">Aperte</button>
+        </div>
+        <br><br><br><br><br><br><br><br>
+    </main>
+  <footer>
+    <div class="rodape">
+        <a href="./perfil1.html" style="color: rgb(144, 255, 130); font-weight: bold; text-decoration: underline;">João Vitor</a> 
+        <a href="./perfil2.html" style="color: rgb(144, 255, 130); font-weight: bold; text-decoration: underline;">Mateus</a>
+        <a href="./perfil2.html" style="color: rgb(144, 255, 130); font-weight: bold; text-decoration: underline;">Douglas</a>
+    </div>
+    </div>
+  </footer>
+  <script src="placamae.js"></script>
+</body>
+</html>
