@@ -1,12 +1,18 @@
+@font-face {
+    font-family: 'ComicSans';
+    src: url('fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column; 
     align-items: center;    
     background-color:  #121212;
-    font-family: Arial, sans-serif;
+    font-family: 'ComicSans', sans-serif;
 }
 header > h1 {
     color: #00ff88; 
@@ -67,4 +73,24 @@ header {
     color: #fff;       
     text-align: center; 
     padding: 25px;
+}
+.quiz > h1{
+    color: #00ff88;
+}
+.quiz > p{
+    color: #e5e5e5;
+}
+.quiz > .perguntaprincipal{
+    color: #789d63
+}
+.quiz > button{
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
