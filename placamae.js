@@ -1,5 +1,5 @@
 let nota = 0
-let contador = 0 
+let contador = 1
 function send(){
 contador += 1
 let valor = document.getElementById("caixa").value
@@ -11,95 +11,114 @@ switch(contador){
         }
     break
     case 2:
+        if(valorreal == "c"){
+            nota += 1
+        }
+    break
+    case 3:
         if(valorreal == "b"){
             nota += 1
         }
     break
+    case 4:
+        if(valorreal == "a"){
+            nota += 1
+        }
+    break
+    case 5:
+        if(valorreal == "a"){
+            nota += 1
+        }
+    break
+    case 6:
+        if(valorreal == "b"){
+            nota += 1
+        }
+    break
+    case 7:
+        if(valorreal == "c"){
+            nota += 1
+        }
+    break
+    case 8:
+        if(valorreal == "b"){
+            nota += 1
+        }
+    break
+    case 9:
+        if(valorreal == "a"){
+            nota += 1
+        }
+    break
+    case 10:
+        if(valorreal == ""){
+            nota += 1
+        }
+    break
+    default:
+
 }
 switch(contador){
     case 1:
-        let pergunta1 = document.getElementById("pergunta")
-        pergunta1.innerHTML = "O que a placa mãe distribui para os componentes do computador?"
-        
+        document.getElementById("pergunta").innerHTML = "O que a placa mãe distribui para os componentes do computador?"
         document.getElementById("a").innerHTML = " a) Som."
-        document.getElementById("b").innerHTML = " b) Energia e sinais de comunicação."
-        document.getElementById("c").innerHTML = " c) Apenas dados de vídeo."
+        document.getElementById("b").innerHTML = " b) Apenas dados de vídeo."
+        document.getElementById("c").innerHTML = " c) Energia e sinais de comunicação."
     break
     case 2:
-        let pergunta2 = document.getElementById("pergunta")
-        pergunta2.innerHTML = "Qual é o componente que é instalado no soquete da CPU da placa mãe?"
-
-        document.getElementById("a").value = " a) Placa de vídeo."
-        document.getElementById("b").value = " b) Memória RAM."
-        document.getElementById("c").value = " c) Processador (CPU)."
+        document.getElementById("pergunta").innerHTML = "Onde a memória RAM é instalada?"
+        document.getElementById("a").innerHTML= " a) No gabinete  "
+        document.getElementById("b").innerHTML= " b) Na placa-mãe  "
+        document.getElementById("c").innerHTML= " c) No monitor  "
     break
     case 3:
-        let pergunta3 = document.getElementById("pergunta")
-        pergunta3.innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "Qual peça é encaixada no soquete da placa-mãe?"
+        document.getElementById("a").innerHTML = " a) Processador (CPU)"
+        document.getElementById("b").innerHTML = " b) HD"
+        document.getElementById("c").innerHTML = " c) Fonte de alimentação  "
     break
     case 4:
-        let pergunta4 = document.getElementById("pergunta")
-        pergunta4.innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "Qual componente **não** se conecta diretamente à placa-mãe?"
+        document.getElementById("a").innerHTML = " a) Mouse  "
+        document.getElementById("b").innerHTML = " b) Processador  "
+        document.getElementById("c").innerHTML = " c) Memória RAM  "
     break
     case 5:
-        let pergunta5 = document.getElementById("pergunta")
-        pergunta5.innerHTML = "O que são os slots de RAM na placa mãe?"
-        document.getElementById("pergunta").innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "A placa-mãe distribui o quê para os componentes?"
+        document.getElementById("a").innerHTML = " a) Vídeos "
+        document.getElementById("b").innerHTML = " b) Energia e informações  "
+        document.getElementById("c").innerHTML = " c) Músicas  "
     break
     case 6:
-        let pergunta6 = document.getElementById("pergunta")
-        pergunta1.innerHTML = "Qual é a função do chipset na placa mãe?"
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "Qual destas opções representa um tipo de slot de expansão na placa-mãe?"
+        document.getElementById("a").innerHTML = " a) HDMI  "
+        document.getElementById("b").innerHTML = " b) USB  "
+        document.getElementById("c").innerHTML = " c) PCIe "
     break
     case 7:
-        let pergunta7 = document.getElementById("pergunta")
-        pergunta1.innerHTML = "O que são as portas SATA na placa mãe usadas para conectar?"
-        document.getElementById("pergunta").innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "O que é um soquete (socket) na placa-mãe?"
+        document.getElementById("a").innerHTML = " a) Um tipo de memória interna"
+        document.getElementById("b").innerHTML = " b) O conector onde se instala o processador"
+        document.getElementById("c").innerHTML = " c) Um slot para instalar placas de vídeo"
     break
     case 8:
-        let pergunta8 = document.getElementById("pergunta")
-        pergunta8.innerHTML = " O que são as portas USB da placa mãe usadas para?"
-        document.getElementById("pergunta").innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = " O que é o barramento (bus) numa placa mãe?"
+        document.getElementById("a").innerHTML = " a) Canal de comunicação que transporta dados e sinais entre componentes"
+        document.getElementById("b").innerHTML = " b) Um circuito especializado em refrigeração"
+        document.getElementById("c").innerHTML = " c) Uma interface de vídeo"
     break
     case 9:
-        let pergunta9 = document.getElementById("pergunta")
-        pergunta9.innerHTML = ""
-        document.getElementById("pergunta").innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
-    break
-    case 10:
-        let pergunta10 = document.getElementById("pergunta")
-        pergunta10.innerHTML = ""
-        document.getElementById("a").value = ""
-        document.getElementById("b").value = ""
-        document.getElementById("c").value = ""
+        document.getElementById("pergunta").innerHTML = "Um recurso comum em placas mãe modernas é o “ARGB” ou “RGB”. Isso serve para:"
+        document.getElementById("a").innerHTML = " a) Aumentar desempenho do processador"
+        document.getElementById("b").innerHTML = " b) Melhorar refrigeração"
+        document.getElementById("c").innerHTML = " c) Iluminação personalizada (luzes)"
     break
     default:
         if(nota >= 6){
             document.getElementById("pergunta").innerHTML = "Parabéns sua nota foi " + nota
         }else{
-            document.getElementById("pergunta").innerHTML = "Que feio ein, sua nota foi " + nota
+            document.getElementById("pergunta").innerHTML = "Que pena, sua nota foi " + nota
         }
     break
-
 }
 }
