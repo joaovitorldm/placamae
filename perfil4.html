@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background: black;
+    margin: 0;
+    padding: 0;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;  
+    flex-direction: column;
+    text-align: center;           
+  }
+
+    .avatar-wrapper {
+     width: 160px;              
+    height: 160px;
+    margin: 40px auto;         
+    border-radius: 50%;        
+    overflow: hidden;          
+    display: block;
+    box-shadow: 0 6px 18px white;
+    border: 4px solid #fff;    
+    background: #eee;          
+  }
+
+  .avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   
+    display: block;
+  }
+body > h1{
+    color: #00ff88;
+}
+body > p{
+    color: #e5e5e5;
+}
+  @media (max-width: 420px) {
+    .avatar-wrapper { width: 120px; height: 120px; }
+  } 
+</style>
+</head>
+<body>
+
+    <div class="avatar-wrapper" aria-hidden="false" role="img" aria-label="Foto do perfil do aluno">
+    <img src="img/jojo.png">
+</div>
+<h1>Vitor</h1>
+<p>Ajudou na parte criativa do site.</p>
+
+<a href="./index.html">
+<img src="img/voltar.png" alt="Seta para voltar" style="width:150px; vertical-align:middle; margin-right:6px;">
+</a>
+</body>
+</html>

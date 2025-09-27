@@ -121,7 +121,7 @@ model-viewer {
         width: 1000px;
         height: 1000px;
         margin: 0 auto;
-    }
+}
 
 @media (max-width: 1024px) {
     .card,

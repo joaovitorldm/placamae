@@ -1,59 +1,83 @@
 let nota = 0
-let contador = 1
+let contador = 0
 function send(){
 contador += 1
-let valor = document.getElementById("caixa").value
+let valor = document.getElementById("caixa")
+valor = valor.value
 let valorreal = valor.toLowerCase()
 switch(contador){
     case 1:
         if(valorreal == "b"){
             nota += 1
+            console.log(nota)
         }
+        let box1 = document.getElementById("caixa")
+        box1.value = ""
     break
     case 2:
         if(valorreal == "c"){
             nota += 1
+            console.log(nota)
         }
+        let box2 = document.getElementById("caixa")
+        box2.value = ""
     break
     case 3:
         if(valorreal == "b"){
             nota += 1
+            console.log(nota)
         }
+        let box3 = document.getElementById("caixa")
+        box3.value = ""
     break
     case 4:
         if(valorreal == "a"){
             nota += 1
         }
+        let box4 = document.getElementById("caixa")
+        box4.value = ""
     break
     case 5:
         if(valorreal == "a"){
             nota += 1
         }
+        let box5 = document.getElementById("caixa")
+        box5.value = ""
     break
     case 6:
         if(valorreal == "b"){
             nota += 1
         }
+        let box6 = document.getElementById("caixa")
+        box6.value = ""
     break
     case 7:
         if(valorreal == "c"){
             nota += 1
         }
+        let box7 = document.getElementById("caixa")
+        box7.value = ""
     break
     case 8:
         if(valorreal == "b"){
             nota += 1
         }
+        let box8 = document.getElementById("caixa")
+        box8.value = ""
     break
     case 9:
         if(valorreal == "a"){
             nota += 1
         }
+        let box9 = document.getElementById("caixa")
+        box9.value = ""
     break
     case 10:
-        if(valorreal == ""){
+        if(valorreal == "c"){
             nota += 1
         }
+        let box10 = document.getElementById("caixa")
+            box10.value = ""
     break
     default:
 
@@ -114,10 +138,16 @@ switch(contador){
         document.getElementById("c").innerHTML = " c) Iluminação personalizada (luzes)"
     break
     default:
-        if(nota >= 6){
+        if(nota >= 7){
             document.getElementById("pergunta").innerHTML = "Parabéns sua nota foi " + nota
+            document.getElementById("a").innerHTML = ""
+            document.getElementById("b").innerHTML = ""
+            document.getElementById("c").innerHTML = ""
         }else{
             document.getElementById("pergunta").innerHTML = "Que pena, sua nota foi " + nota
+            document.getElementById("a").innerHTML = ""
+            document.getElementById("b").innerHTML = ""
+            document.getElementById("c").innerHTML = ""
         }
     break
 }
